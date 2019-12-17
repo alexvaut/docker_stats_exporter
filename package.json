@@ -18,7 +18,8 @@
   "homepage": "https://github.com/wywywywy/docker_stats_exporter#readme",
   "dependencies": {
     "command-line-args": "^5.0.2",
-    "dockerode": "^2.5.7",
-    "prom-client": "^11.1.3"
+    "dockerode": "^3.0.2",
+    "prom-client": "^11.1.3",
+    "timestamp-nano": "^1.0"
   }
 }
