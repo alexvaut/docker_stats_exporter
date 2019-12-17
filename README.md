@@ -51,7 +51,7 @@ The arguments can also be set as env variables instead. Useful if you're using i
 
 Node 10 is required to run it. It uses [Apocas's Dockerode library](https://github.com/apocas/dockerode).
 
-    git clone git@github.com:wywywywy/docker_stats_exporter.git
+    git clone git@github.com:alexvaut/docker_stats_exporter.git
     cd docker_stats_exporter
     npm install
     npm start
