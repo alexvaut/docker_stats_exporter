@@ -5,24 +5,24 @@ Windows Docker Stats exporter for Prometheus.io. Compatible with cadvisor metric
 It's a fork of https://github.com/wywywywy/docker_stats_exporter where the support for linux has been replaced by the support of windows . Cadvisor is doing a good enough job on linux while on windows there isn't anything.
 
 It is exposing a subset of the cadvisor metrics depending on what is available on a windows host:
-- counterCpuUsageTotalSeconds
-- counterCpuKernelTotalSeconds
-- gaugeCpuLimitQuota
-- gaugeMemoryUsageBytes
-- gaugeMemoryWorkingSetBytes
-- gaugeMemoryLimitBytes
-- counterNetworkReceivedBytes
-- counterNetworkReceivedErrors
-- counterNetworkReceivedDropped
-- counterNetworkReceivedPackets
-- counterNetworkSentBytes
-- counterNetworkSentErrors
-- counterNetworkSentDropped
-- counterNetworkSentPackets
-- counterFsReadBytes
-- counterFsReads
-- counterFsWriteBytes
-- counterFsWrites
+- container_cpu_usage_seconds_total
+- container_cpu_system_seconds_total
+- container_spec_cpu_quota
+- container_memory_usage_bytes
+- container_memory_working_set_bytes
+- container_spec_memory_limit_bytes
+- container_network_receive_bytes_total
+- container_network_receive_errors_total
+- container_network_receive_packets_dropped_total
+- container_network_receive_packets_total
+- container_network_transmit_bytes_total
+- container_network_transmit_errors_total
+- container_network_transmit_packets_dropped_total
+- container_network_transmit_packets_total
+- container_fs_reads_bytes_total
+- container_fs_reads_total
+- container_fs_writes_bytes_total
+- container_fs_writes_total
 
 ## Usage
 
