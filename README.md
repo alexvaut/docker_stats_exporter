@@ -1,4 +1,6 @@
-Windows Daemon Docker Stats exporter for Prometheus.io. Compatible with cadvisor metrics !
+# Windows Docker Stats exporter
+
+Windows Docker Stats exporter for Prometheus.io. Compatible with cadvisor metrics !
 
 It's a fork of https://github.com/wywywywy/docker_stats_exporter where the support for linux has been replaced by the support of windows . Cadvisor is doing a good enough job on linux while on windows there isn't anything.
 
@@ -22,9 +24,9 @@ It is exposing a subset of the cadvisor metrics depending on what is available o
 - counterFsWriteBytes
 - counterFsWrites
 
-# Usage
+## Usage
 
-## Arguments
+### Arguments
 
     --port     9487         Exporter listens on this port (default = 9487)
     --interval 15           Polling interval in seconds (default = 15, minimum 3)
@@ -43,9 +45,9 @@ The arguments can also be set as env variables instead. Useful if you're using i
 4. DOCKERSTATS_HOSTPORT
 5. DOCKERSTATS_DEFAULTMETRICS
 
-# Installation
+## Installation
 
-## From Source
+### From Source
 
 Node 10 is required to run it. It uses [Apocas's Dockerode library](https://github.com/apocas/dockerode).
 
@@ -56,11 +58,11 @@ Node 10 is required to run it. It uses [Apocas's Dockerode library](https://gith
 
 Recommend npm version >= 6, as version 5 seems to have problems installing Dockerode.
 
-## With Docker
+### With Docker
 
     docker run -d --restart=always -p 9487:9487 alexvaut/docker_stats_exporter:latest
 
-## Prometheus Config
+### Prometheus Config
 
 Add this to prometheus.yml and change the IP/port if needed.
 
@@ -70,6 +72,6 @@ Add this to prometheus.yml and change the IP/port if needed.
         - targets:
             - 'windowsHost:9487'
             
-# License
+## License
 
 This is licensed under the Apache License 2.0.
