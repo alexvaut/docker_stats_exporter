@@ -1,9 +1,9 @@
-# Windows Docker Stats exporter
-
-This repo is obsolete, check https://github.com/alexvaut/cStatsExporter instead.
+**This repo is obsolete, check https://github.com/alexvaut/cStatsExporter instead.**
 
 ## Reason
 Because of this issue: https://github.com/docker/for-win/issues/1976 a workaround was added to find the host ip. The workaround is writng the host file according to the output of ipconfig. On a deployment with docker or docker-compose it works fine. However, with docker swarm or when a multi instances network is used, it doesn't since the gateway is not the host....
+
+# Windows Docker Stats exporter
 
 Windows Docker Stats exporter for Prometheus.io. Compatible with cadvisor metrics !
 
